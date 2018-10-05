@@ -1,0 +1,61 @@
+﻿<Window x:Class="PopulationGrowth.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PopulationGrowth"
+        mc:Ignorable="d"
+        Title="Population Growth" Height="500" Width="450" Loaded="Window_Loaded" Background="Silver"> 
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Initial Population" Grid.Row="0" Grid.Column="0" FontSize="20"/>
+            <TextBox Name="InPopulation" Grid.Row="0" Grid.Column="1" Margin="10" FontSize="15" Text="{Binding Count}" PreviewTextInput="InPopulation_PreviewTextInput"/>
+            <Label Content="Birth Rate" Grid.Row="1" Grid.Column="0" FontSize="20"/>
+            <TextBox Name="PopulationIncreaseRate" Grid.Row="1" Grid.Column="1" Margin="10" FontSize="15" Text="{Binding Rate}" PreviewTextInput="PopulationIncreaseRate_PreviewTextInput"/>
+            <Label Content="Number of Days" Grid.Row="2" Grid.Column="0" FontSize="20"/>
+            <TextBox Name="DaysToCalculate" Grid.Row="2" Grid.Column="1" Margin="10" FontSize="15" Text="{Binding Days}" PreviewTextInput="DaysToCalculate_PreviewTextInput" />
+            <Label Content="Mortality Rate" Grid.Row="3" Grid.Column="0"  FontSize="20"/>
+            <TextBox Name="MortalityRatePerDay" Grid.Row="3" Grid.Column="1" Margin="10" FontSize="15" Text="{Binding Death}" PreviewTextInput="MortalityRatePerDay_PreviewTextInput" />
+            <Button Name="Calc" Grid.Row="4" Grid.Column="0" FontSize="20" Content="Calculate" Click="Calc_Click"/>
+            <Button Name="Reset" Grid.Row="4" Grid.Column="1" FontSize="20" Content="Reset" Click="Reset_Click"/>
+            <Button Name="Save" Grid.Row="5" Grid.Column="1" FontSize="20" Content="Save" Click="Save_Click"/>
+            <Button Name="Kill" Grid.Row="5" Grid.Column="0" FontSize="20" Content="Catastrophes" Click="Kill_Click"/>
+            <Label Name="HowToKill" Grid.Row="6" Grid.ColumnSpan="2" FontSize="20" Content="{Binding Disaster}"/>
+            <Image Name="CatastropheImage" Grid.Row="7" Grid.ColumnSpan="2" Source="{Binding Destruct}"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <ListBox Name="PopulationShow" ItemsSource="{Binding Peeps}" ><!-- ListBox to Show the Population Growth -->
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Content="{Binding Message}" ScrollViewer.IsDeferredScrollingEnabled="False" FontSize="15"/>
+                            <Label Grid.Column="1" Content="{Binding Value}" HorizontalContentAlignment="Right" ScrollViewer.IsDeferredScrollingEnabled="False" FontSize="15"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+</Window>

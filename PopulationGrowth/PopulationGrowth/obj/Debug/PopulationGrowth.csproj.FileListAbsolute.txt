@@ -1,0 +1,15 @@
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\bin\Debug\PopulationGrowth.exe.config
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\bin\Debug\PopulationGrowth.exe
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\bin\Debug\PopulationGrowth.pdb
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth.csprojAssemblyReference.cache
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\MainWindow.g.cs
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\App.g.cs
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth_MarkupCompile.cache
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth_MarkupCompile.lref
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\MainWindow.baml
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth.g.resources
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth.Properties.Resources.resources
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth.csproj.GenerateResource.cache
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth.csproj.CoreCompileInputs.cache
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth.exe
+C:\Users\prince\source\repos\PopulationGrowth\PopulationGrowth\obj\Debug\PopulationGrowth.pdb
